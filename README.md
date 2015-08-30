@@ -1,9 +1,9 @@
-## Hatpick
+### Hatpick
 
 **Warning!** Alpha software, not yet fully tested and implemented.
 
 
-### Intro
+#### Intro
 
 **Description**: An efficient non-repeating random element picker based on the Fisher-Yates shuffle algorithm.
 
@@ -13,7 +13,7 @@ A Hatpick `Bag` will pick a random element from a provided `Collection` without 
 are several options to change the behaviour of the bag, for example looping (resetting) when the bag is empty. More 
 options and collections are planned to be added.
 
-### Usage
+#### Usage
 
 The Hatpick bag expects a `Collection` passed to it's constructor. The `Collection` type will determine the type of elements
 that can be picked from. An optional config array can be provided as a second argument.
@@ -23,7 +23,7 @@ There are several Collections to use with a Hatpick bag.
 - RangeCollection
 - ArrayCollection
 
-#### RangeCollection
+##### RangeCollection
 
 In range mode you provide a range of numbers to pick from. Just like picking numbers out of a hat.
 
@@ -32,7 +32,7 @@ In range mode you provide a range of numbers to pick from. Just like picking num
     $number = $bag->pick(); // returns a number between 1-10 (including 1 and 10).
     
     
-#### ArrayCollection
+##### ArrayCollection
 
 With this collection we can provide our own array to pick from. In this example we use looping as well, this means the `Bag`
 will reset itself in case all elements have been picked.
@@ -43,7 +43,7 @@ will reset itself in case all elements have been picked.
     $word = $bag->pick(); // we can keep on picking forever without repeats within the provided set
     
     
-### Custom Collections
+#### Custom Collections
 
 
 Creating a Collection is easy; just implement the `BagInterface` interface and you are ready to go. The interface is very 
