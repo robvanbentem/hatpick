@@ -1,0 +1,33 @@
+{
+    "name": "robvanbentem/hatpick",
+    "description": "An efficient non-repeating element/number picker based on the Fisher-Yates shuffle algorithm.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob van Bentem",
+            "email": "robvanbentem@gmail.com",
+            "homepage": "https://github.com/robvanbentem"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": [
+            "strings.php"
+        ],
+        "psr-4": {
+            "Hatpick\\": "src/",
+            "Test\\": "test/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "test/HatpickTest.php"
+        ]
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "mockery/mockery": "0.9.*"
+    }
+}
