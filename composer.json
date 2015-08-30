@@ -1,6 +1,6 @@
 {
     "name": "robvanbentem/hatpick",
-    "description": "An efficient non-repeating element/number picker based on the Fisher-Yates shuffle algorithm.",
+    "description": "An efficient non-repeating random element picker based on the Fisher-Yates shuffle algorithm.",
     "type": "library",
     "license": "MIT",
     "authors": [
